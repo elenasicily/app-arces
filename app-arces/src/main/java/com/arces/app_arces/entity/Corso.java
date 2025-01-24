@@ -21,11 +21,11 @@ public class Corso {
     @Column(name = "id", nullable = false, unique = true)
     private Long id;
 
-    @JsonFormat(pattern = "yyyy-MM-dd")
+   // @JsonFormat(pattern = "yyyy-MM-dd")
     @Column(name = "databegin", nullable = false)
     private LocalDate dataBegin;
 
-    @JsonFormat(pattern = "yyyy-MM-dd")
+    //@JsonFormat(pattern = "yyyy-MM-dd")
     @Column(name = "dataend", nullable = false)
     private LocalDate dataEnd;
 

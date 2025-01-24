@@ -75,5 +75,10 @@ public class StudentService {
     public Student findStudentByEmail (String email) {
         return studentRepository.findByEmail(email).orElseThrow(()->new RuntimeException ("Student not found"));
     }
+
+    public List<Student> findStudentWithInteres () {
+        return studentRepository.findStudentsWithInteres();
+    }
+
 }
 

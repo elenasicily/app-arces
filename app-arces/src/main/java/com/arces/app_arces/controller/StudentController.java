@@ -61,4 +61,12 @@ public class StudentController {
         //  logger.debug("Retrieved students: {}", students);
     }
 
+    @GetMapping("/students-interes")
+    //@ResponseBody
+    public List<Student> findStudentWithInteres() {
+        List<Student> students = studentService.findStudentWithInteres();
+        logger.debug("Retrieved students: {}", students);
+        return students;
+    }
+
     }
